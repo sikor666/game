@@ -22,7 +22,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ext/engine)
 add_executable(${PROJECT_NAME} src/main.cpp)
 
 # Add link libraries
-target_link_libraries(${PROJECT_NAME} engine)
+target_link_libraries(${PROJECT_NAME} PRIVATE engine)
 
 # Install binaries
 install(TARGETS ${PROJECT_NAME}
